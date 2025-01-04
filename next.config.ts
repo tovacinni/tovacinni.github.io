@@ -11,12 +11,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-module.exports = {
-  output: 'export',
-  basePath: '',
-  images: {
-    unoptimized: true,
-  }
-}
-
 export default nextConfig;
