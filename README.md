@@ -2,11 +2,12 @@
 
 This is a template for a personal website meant for researchers.
 
-In practice it could probably be used by anyone. 
+In practice it could probably be used by anyone.
 
 It is meant to be customizeable, all through modifying the `src/data` - which have arrays of objects that are used to generate the website.
 
 For example, `src/data/publication.ts` contains an array like:
+
 ```
 export const publicationData: Publication[] = [
   {
@@ -29,6 +30,7 @@ You can also change the order of the sections in `src/data/section-order.ts`, an
 First, install Node.js and npm through the [Node.js official website](https://nodejs.org/).
 
 Verify installation by running:
+
 ```bash
 node --version
 npm --version
@@ -39,6 +41,7 @@ npm --version
 1. Fork the repository
 
 2. Clone the repository
+
    ```bash
    git clone [your-repository-url]
    cd [repository-name]
@@ -46,7 +49,8 @@ npm --version
 
 3. Install dependencies
 
-    Inside the repository, run:
+   Inside the repository, run:
+
    ```bash
    npm install
    ```
@@ -54,6 +58,7 @@ npm --version
 ## Running the Application
 
 1. To start the development server, run (in the repository directory):
+
    ```bash
    npm run dev
    ```
