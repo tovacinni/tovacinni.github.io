@@ -13,7 +13,7 @@ export const experienceData: Experience[] = [
     date: "2024—Present",
     title: "Co-Founder / CEO",
     company: "Outerport",
-    description: "Fast and robust retrieval using private LLMs.",
+    description: "Chain-of-memory reasoning for complex document understanding.",
     companyUrl: "https://www.outerport.com",
   },
   {
