@@ -14,6 +14,15 @@ export interface Publication {
 export const publicationData: Publication[] = [
   // If you don't want to show publications, just make the array empty.
   {
+    year: "2025",
+    conference: "Eurographics",
+    authors: "Nicholas Vining, Zander Majercik, Floria Gu, Towaki Takikawa, Ty Trusty, Paul Lalonde, Morgan McGuire, Alla Sheffer",
+    title: "FastAtlas: Real-Time Compact Atlases for Texture Space Shading",
+    paperUrl: "https://www.cs.ubc.ca/labs/imager/tr/2025/fastatlas/",
+    tldr: "GPU-based atlas packing for real-time texture space rendering.",
+    imageUrl: "/images/fastatlas.jpg",
+  },
+  {
     year: "2024",
     conference: "arXiv",
     title: "A LoRA is Worth a Thousand Pictures",
