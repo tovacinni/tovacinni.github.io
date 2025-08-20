@@ -7,18 +7,27 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
       <div className="col-span-3 flex flex-col">
         <h3 className="text-base font-serif">
           {experience.title} —{" "}
-          {experience.companyUrl ? (
-            <a
-              href={experience.companyUrl}
-              className="hover:text-zinc-600 transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {experience.company}
-            </a>
-          ) : (
-            experience.company
-          )}
+          <span className="inline-flex items-center gap-2">
+            {experience.companyUrl ? (
+              <a
+                href={experience.companyUrl}
+                className="hover:text-zinc-600 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {experience.company}
+              </a>
+            ) : (
+              experience.company
+            )}
+            {experience.internship && (
+              <span className="inline-flex items-center px-2 py-1 bg-gradient-to-r from-zinc-100 to-slate-50 rounded-md shadow-sm border border-zinc-200/50 font-sans text-xs">
+                <p className="text-xs text-zinc-600">
+                  Intern
+                </p>
+              </span>
+            )}
+          </span>
         </h3>
         {experience.advisor && (
           <p className="text-sm text-zinc-600 leading-relaxed italic mt-2">

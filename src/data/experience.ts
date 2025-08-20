@@ -6,6 +6,7 @@ export interface Experience {
   advisor?: string;
   manager?: string;
   companyUrl?: string;
+  internship?: boolean;
 }
 
 export const experienceData: Experience[] = [
@@ -21,8 +22,8 @@ export const experienceData: Experience[] = [
     title: "Research Scientist",
     company: "NVIDIA",
     description:
-      "New Experiences Research Group (Hyperscale Graphics Systems).",
+      "Geometry processing, 3D generative AI, 3D computer vision.",
     manager: "David Luebke, Morgan McGuire",
     companyUrl: "https://nvidia.com",
-  },
+  }
 ];
